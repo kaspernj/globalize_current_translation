@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.version     = GlobalizeCurrentTranslation::VERSION
   spec.authors     = ["kaspernj"]
   spec.email       = ["kj@abtion.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of GlobalizeCurrentTranslation."
-  spec.description = "TODO: Description of GlobalizeCurrentTranslation."
+  spec.homepage    = "https://github.com/kaspernj/globalize_current_translation"
+  spec.summary     = "A gem that helps create a `current_translation` relationship which is the translation in the current locale with fallback to other locales."
+  spec.description = "A gem that helps create a `current_translation` relationship which is the translation in the current locale with fallback to other locales."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

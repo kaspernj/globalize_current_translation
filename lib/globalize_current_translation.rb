@@ -1,5 +1,5 @@
 require "globalize_current_translation/engine"
 
 module GlobalizeCurrentTranslation
-  # Your code goes here...
+  autoload :Scope, "#{__dir__}/globalize_current_translation/scope"
 end
