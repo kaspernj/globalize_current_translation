@@ -20,7 +20,7 @@ Category.left_joins(:current_translation).order("category_translations.name")
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'globalize_current_translation'
+gem 'globalize_current_translation', git: 'https://github.com/kaspernj/globalize_current_translation.git'
 ```
 
 And then execute:
