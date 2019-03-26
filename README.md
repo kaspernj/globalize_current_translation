@@ -2,7 +2,19 @@
 Short description and motivation.
 
 ## Usage
-How to use my plugin.
+
+Install the gem on your models like this:
+```ruby
+class Category < ApplicationRecord
+  translates :name
+  include GlobalizeCurrentTranslation::Scope
+end
+```
+
+Now you can use the new relationship to order a collection by its current locale but fall back to another locale:
+```ruby
+Category.left_joins(:current_translation).order("category_translations.name")
+```
 
 ## Installation
 Add this line to your application's Gemfile:
