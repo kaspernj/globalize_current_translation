@@ -1,0 +1,5 @@
+rvm: true
+script:
+  - bundle exec rspec
+  - bundle exec rubocop
+  - bundle exec rails_best_practices
