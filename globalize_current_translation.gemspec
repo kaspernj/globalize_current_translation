@@ -29,6 +29,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 5.2.0"
 
+  spec.add_development_dependency "factory_bot_rails"
+  spec.add_development_dependency "globalize"
+  spec.add_development_dependency "globalize-accessors"
   spec.add_development_dependency "rails_best_practices"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop"
