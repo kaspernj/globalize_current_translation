@@ -9,5 +9,10 @@ FactoryBot.define do
       name_da { "Mand" }
       name_en { "Male" }
     end
+
+    trait :other do
+      name_da { "Andet" }
+      name_en { "Other" }
+    end
   end
 end

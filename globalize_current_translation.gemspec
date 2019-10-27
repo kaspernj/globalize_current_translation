@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "factory_bot_rails"
   spec.add_development_dependency "globalize"
   spec.add_development_dependency "globalize-accessors"
+  spec.add_development_dependency "pry"
   spec.add_development_dependency "rails_best_practices"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop"

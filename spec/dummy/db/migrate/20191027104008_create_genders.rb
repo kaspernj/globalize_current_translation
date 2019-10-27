@@ -1,6 +1,6 @@
 class CreateGenders < ActiveRecord::Migration[6.0]
   def up
-    create_table :genders do |t|
+    create_table :genders do |t| # rubocop:disable Style/SymbolProc
       t.timestamps
     end
 

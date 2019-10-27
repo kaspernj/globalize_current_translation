@@ -12,6 +12,7 @@ require "rspec/rails"
 require "factory_bot_rails"
 require "globalize"
 require "globalize-accessors"
+require "pry"
 
 I18n.available_locales = [:da, :en]
 
