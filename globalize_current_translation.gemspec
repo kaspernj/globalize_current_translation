@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 5.2.0"
 
+  spec.add_development_dependency "rails_best_practices"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rubocop"
   spec.add_development_dependency "rubocop-performance"

@@ -64,15 +64,19 @@ GEM
       zeitwerk (~> 2.1, >= 2.1.8)
     ast (2.4.0)
     builder (3.2.3)
+    code_analyzer (0.4.8)
+      sexp_processor
     concurrent-ruby (1.1.5)
     crass (1.0.5)
     diff-lcs (1.3)
     erubi (1.9.0)
+    erubis (2.7.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.3)
+    json (2.2.0)
     loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -114,6 +118,14 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
+    rails_best_practices (1.19.4)
+      activesupport
+      code_analyzer (>= 0.4.8)
+      erubis
+      i18n
+      json
+      require_all (~> 2.0)
+      ruby-progressbar
     railties (6.0.0)
       actionpack (= 6.0.0)
       activesupport (= 6.0.0)
@@ -122,6 +134,7 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rainbow (3.0.0)
     rake (13.0.0)
+    require_all (2.0.0)
     rspec-core (3.9.0)
       rspec-support (~> 3.9.0)
     rspec-expectations (3.9.0)
@@ -154,6 +167,7 @@ GEM
     rubocop-rspec (1.36.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
+    sexp_processor (4.13.0)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -177,6 +191,7 @@ PLATFORMS
 
 DEPENDENCIES
   globalize_current_translation!
+  rails_best_practices
   rspec-rails
   rubocop
   rubocop-performance
