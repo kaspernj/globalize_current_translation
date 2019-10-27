@@ -1,5 +1,3 @@
-module GlobalizeCurrentTranslation
-  class ApplicationController < ActionController::Base
-    protect_from_forgery with: :exception
-  end
+class GlobalizeCurrentTranslation::ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
 end

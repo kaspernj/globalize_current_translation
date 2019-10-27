@@ -1,6 +1,4 @@
-module GlobalizeCurrentTranslation
-  class ApplicationMailer < ActionMailer::Base
-    default from: 'from@example.com'
-    layout 'mailer'
-  end
+class GlobalizeCurrentTranslation::ApplicationMailer < ActionMailer::Base
+  default from: "from@example.com"
+  layout "mailer"
 end
