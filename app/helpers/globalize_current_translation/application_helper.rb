@@ -1,2 +1,0 @@
-module GlobalizeCurrentTranslation::ApplicationHelper
-end
