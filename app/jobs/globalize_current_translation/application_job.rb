@@ -1,4 +1,2 @@
-module GlobalizeCurrentTranslation
-  class ApplicationJob < ActiveJob::Base
-  end
+class GlobalizeCurrentTranslation::ApplicationJob < ActiveJob::Base
 end

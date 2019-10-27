@@ -1,4 +1,2 @@
-module GlobalizeCurrentTranslation
-  module ApplicationHelper
-  end
+module GlobalizeCurrentTranslation::ApplicationHelper
 end
