@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.description = "A gem that helps create a `current_translation` relationship " \
     "which is the translation in the current locale with fallback to other locales."
   spec.license     = "MIT"
+  spec.required_ruby_version = ">= 2.5.0"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
