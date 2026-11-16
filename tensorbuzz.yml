@@ -1,0 +1,25 @@
+rvm: true
+# One lane runs all three commands, so `paths` is the union of what they read:
+# rspec boots the engine (app/, config/, lib/) through the dummy app (spec/) and
+# the bundle (Gemfile/Gemfile.lock/gemspec); Rubocop inspects the Ruby sources
+# plus .rubocop.yml; rails_best_practices analyses app/, config/, db/, lib/ and
+# spec/. README.md, MIT-LICENSE, .gitignore and .github/ are outside the list -
+# none of the three commands reads them.
+paths:
+  - "app/**"
+  - "bin/**"
+  - "config/**"
+  - "db/**"
+  - "lib/**"
+  - "spec/**"
+  - ".rspec"
+  - ".rubocop.yml"
+  - ".ruby-version"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "Rakefile"
+  - "globalize_current_translation.gemspec"
+script:
+  - bundle exec rspec
+  - bundle exec rubocop
+  - bundle exec rails_best_practices

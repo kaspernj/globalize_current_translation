@@ -6,6 +6,23 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # development dependencies will be added by default to the :development group.
 gemspec
 
+# Development-only gems belong in the Gemfile: a gemspec development dependency
+# is resolved against every consumer of the gem.
+group :development, :test do
+  gem "factory_bot_rails"
+  gem "globalize"
+  gem "globalize-accessors"
+  gem "pry"
+  gem "rails_best_practices"
+  gem "rspec-rails"
+  gem "rubocop"
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
+  gem "sqlite3"
+  gem "tzinfo-data"
+end
+
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing

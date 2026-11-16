@@ -10,6 +10,12 @@ require "rspec/rails"
 # Add additional requires below this line. Rails is not loaded until this point!
 
 require "factory_bot_rails"
+
+# The dummy app lives in spec/dummy, so factory_bot_rails resolves its default
+# definition paths inside the dummy app and never sees this engine's
+# spec/factories directory.
+FactoryBot.definition_file_paths = [File.expand_path("factories", __dir__)]
+FactoryBot.find_definitions
 require "globalize"
 require "globalize-accessors"
 require "pry"
@@ -36,14 +42,14 @@ I18n.available_locales = [:da, :en]
 begin
   ActiveRecord::Migration.maintain_test_schema!
 rescue ActiveRecord::PendingMigrationError => e
-  puts e.to_s.strip
+  warn e.to_s.strip
   exit 1
 end
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.fixture_path = Rails.root.join("spec/fixtures").to_s
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
